@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{%block title %} Algebra {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_math.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Algebra</b></h1>
+        <img class="image_right" src="/static/algebra.jpg" alt="Algebra" title="Algebra" >
+        <!-- style="width:35%;height:auto;" -->
+        <p class = "text1">Algebra is the study of mathematical symbols and the rules for manipulating these symbols.<br>
+            It is a unifying thread of almost all mathematics. <br>
+            It includes everything from elementary equation solving to the study of abstractions such as groups, rings, and fields.<br>
+            <br>
+            The more basic parts of algebra are called elementary algebra. <br>
+            the more abstract parts are called abstract algebra or modern algebra. <br>
+            <br>
+            Elementary algebra is generally considered to be essential for any study of mathematics, science, or engineering,as well as such applications as medicine and economics. <br>
+            <br>
+            Abstract algebra is a major area in advanced mathematics, studied primarily by professional mathematicians.<br>
+        </p>
+    {%block footer %}
+        {{ super() }}
+        <p>Reference:</p>
+        <a href="https://en.wikipedia.org/wiki/Algebra" target="_blank">https://en.wikipedia.org/wiki/Algebra</a>
+    {% endblock %}
+    </div>
+{% endblock %}
+

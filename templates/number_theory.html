@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{%block title %} Number Theory {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_math.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Number Theory</b></h1>
+        <img class = "image_right" src="/static/number_theory.jpeg" alt="Prime Number" title="Prime Number">
+        <p>Number theory (or arithmetic or higher arithmetic in older usage) is a branch of pure mathematics devoted primarily to the study of the integers and integer-valued functions.
+        <br>
+        <br>
+        German mathematician Carl Friedrich Gauss (1777–1855) said, "Mathematics is the queen of the sciences—and number theory is the queen of mathematics."
+        <br>
+        <br>
+        Number theorists study prime numbers as well as the properties of objects made out of integers (for example, rational numbers) or defined as generalizations of the integers (for example, algebraic integers).
+        </p>
+    {%block footer %}
+        {{ super() }}
+        <p>Reference:</p>
+        <a href="https://en.wikipedia.org/wiki/Number_theory" target="_blank">https://en.wikipedia.org/wiki/Number_theory</a>
+    {% endblock %}
+    </div>
+{% endblock %}
+

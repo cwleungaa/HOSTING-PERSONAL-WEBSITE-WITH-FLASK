@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{%block title %} Mario {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Mario</b></h1>
+        <img src="/static/mario1.png" alt="Mario win" title="Mario win" style="width:50%;height:auto;">
+        <br>
+        <img src="/static/mario2.png" alt="Mario Lost" title="Mario Lost" style="width:50%;height:auto;">
+        <p>In Mario, my jobs are:
+        <ol>
+            <li>Add a pyramid of blocks to the generated level.</li>
+            <li>Add the hole on the ground such that Mario can fall into death.</li>
+            <li>Add an animated flag at the end of the level that either loads a new level or simply displays a victory message to the screen.</li>
+            <li>Add an animated enemy who can kill Mario</li>
+        </ol>
+        </p>
+        <p>
+            <a href="https://cs50.harvard.edu/x/2020/tracks/games/mario/" target="_blank" >https://cs50.harvard.edu/x/2020/tracks/games/mario/</a>
+        </p>
+    </div>
+
+{% endblock %}

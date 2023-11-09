@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{%block title %} CS50 {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>CS50</b></h1>
+        <img src="/static/cs50.jpg" alt="CS50" title="CS50" style="width:45%;height:auto;">
+        <p>CS50 is an introductory course of computer science.</p>
+        <p>It covers wild range of topic include abstraction, algorithms, data structures, encapsulation, resource management, security, and software engineering.</p>
+        <p>Languages include C, Python, and SQL plus students’ choice of: HTML, CSS, and JavaScript (for web development);
+        Java or Swift (for mobile app development);
+        or Lua (for game development).</p>
+        <p>Problem sets inspired by the arts, humanities, social sciences, and sciences.
+        Course culminates in a final project.
+        Designed for concentrators and non-concentrators alike, with or without prior programming experience.</p>
+        <p>Course Website</p>
+        <a href="https://cs50.harvard.edu/x/2020/" target="_blank" >https://cs50.harvard.edu/x/2020/</a>
+    </div>
+
+{% endblock %}

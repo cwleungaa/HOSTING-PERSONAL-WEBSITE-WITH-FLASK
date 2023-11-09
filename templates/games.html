@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{%block title %} Games {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Games</b></h1>
+        <p>In game’s track, we’ll be writing interactive, graphical games: Pong and Mario.
+                            We’ll be using the Lua language and the LÖVE framework.
+        </p>
+        <h2><b>Pong</b></h2>
+        <p>Ping-Pong is a traditional player VS AI game.
+        There will be two paddles and a ball bouncing between them.
+        It starts to serve by each player alternatively.
+        If the ball passes the paddle, you can score a point, the game ends if one of the players can score ten points.</p>
+        <h2><b>Mario</b></h2>
+        <p>In Mario, we are building a RPG game that simulates the classic Super Mario Brothers game.
+        We’ll create a game world with tiles and blocks and a character that we can move around.
+        Our winning condition is that moving Mario to the right-side of the map, jump to the pole and pull down the flag.
+        If Mario falls into the hole or killed by his enemy, he dies and game over.</p>
+    </div>
+
+{% endblock %}

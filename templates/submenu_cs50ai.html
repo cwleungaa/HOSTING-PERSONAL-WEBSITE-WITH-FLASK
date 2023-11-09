@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS50AI Submenu</title>
+</head>
+<body>
+    <div class="submenu">
+        <button {{"class=active" if request.path == '/cs50ai/search' else '' }} onclick="redirect_page('{{url_for('cs50ai.search')}}');">Search</button>
+        <button {{"class=active" if request.path == '/cs50ai/knowledge' else '' }} onclick="redirect_page('{{url_for('cs50ai.knowledge')}}');">Knowledge</button>
+        <button {{"class=active" if request.path == '/cs50ai/uncertainty' else '' }} onclick="redirect_page('{{url_for('cs50ai.uncertainty')}}');">Uncertainty</button>
+        <button {{"class=active" if request.path == '/cs50ai/optimization' else '' }} onclick="redirect_page('{{url_for('cs50ai.optimization')}}');">Optimization</button>
+        <button {{"class=active" if request.path == '/cs50ai/learning' else '' }} onclick="redirect_page('{{url_for('cs50ai.learning')}}');">Learning</button>
+        <button {{"class=active" if request.path == '/cs50ai/neural_networks' else '' }} onclick="redirect_page('{{url_for('cs50ai.neural_networks')}}');">Neural Networks</button>
+        <button {{"class=active" if request.path == '/cs50ai/language' else '' }} onclick="redirect_page('{{url_for('cs50ai.language')}}');">Language</button>
+    </div>
+</body>
+</html>

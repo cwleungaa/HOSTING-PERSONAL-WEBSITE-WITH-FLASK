@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{%block title %} Knowledge {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50ai.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Knowledge</b></h1>
+        <p>
+            This section introduces how AI can base on exiting knowledge to draw conclusion using Propositional Logic and inference.
+        </p>
+
+        <p>
+            Propositional logic is based on propositions, statements about the world that can be either true or false.
+        </p>
+
+        <p>
+            Inference is the process of deriving new sentences from old ones.
+        </p>
+
+        <p>
+        Project:
+        </p>
+        <p>
+        1.	Knights<br>
+        Write a program to solve logic puzzles.<br>
+        EG: A says “I am both a knight and a knave.”<br>
+        The AI has to deduce that A is a liar since A can’t be both knight and knave at the same time.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/1/knights/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/1/knights/</a>
+        </p>
+
+        <br>
+        <p>
+        2.	Minesweeper<br>
+        Write an AI to play Minesweeper itself.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/1/minesweeper/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/1/minesweeper/</a>        
+        <img class = "game" src="/static/minesweeper.png" alt="Minesweeper" title="Minesweeper"><br>
+        Video:<br>
+        <iframe class="video" src="https://www.youtube.com/embed/F1jJpNweYao" style="height:400px;width:600px;"></iframe>
+        </p>
+    </div>
+{% endblock %}

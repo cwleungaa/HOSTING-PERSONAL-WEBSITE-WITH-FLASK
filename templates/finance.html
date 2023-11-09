@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{%block title %} Finance {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Finance</b></h1>
+        <img src="/static/finance.png" alt="Personal Website" title="Personal Website" style="width:85%;height:auto;">
+        <p>In the second half of web’s track, we implement C$50 Finance, a web app via which you can manage portfolios of stocks.
+        Not only will this tool allow you to check real stocks’ actual prices and portfolios’ values,
+        it will also let you simulate buying and selling stocks by querying IEX for stocks’ prices.</p>
+        <p>We use a framework in Python called Flask, which allows us to write a web server with many features.
+        Also, we use SQL database to store user information and transaction record.
+        Moreover, we use HTML to handle user interface part.</p>
+
+        <p>This program allows users to register their own account, there have $10000 in each account for users to invest virtually.
+        You can look up the real stock actual price and decide to buy or sell stocks.
+        In the main page, it contains records of your stock and cash that are currently holding in your hand.
+        In the history part, you can view all your buying and selling records in this account.
+        You can also change your password in the change password section.</p>
+
+        <p>
+            <a href="https://cs50.harvard.edu/x/2020/tracks/web/finance/" target="_blank" >https://cs50.harvard.edu/x/2020/tracks/web/finance/</a>
+        </p>
+    </div>
+
+{% endblock %}

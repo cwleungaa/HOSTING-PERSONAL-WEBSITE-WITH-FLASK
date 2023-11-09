@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{%block title %} Python {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+    <div class = "content_style menu_width">
+        <h1><b>PYTHON</b></h1>
+        <p class = "text1">In python section, we transit what we have learnt from C to python.
+                            We compare the differences between C and python. For example, we don’t need to specify the data type of the variable.
+                            Also, there’s lots of free open-source library that we can download and install. With these libraries, we can write our program more effectively.
+                            For example, from the assignment “resize” in C, by using the python library PIL, we can resize an image without handling the metadata and padding issues
+        </p>
+
+        <p class = "text1">By learning C first, we have an understanding for the abstractions that a higher-level language like Python can provide us.</p>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{%block title %} Website {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Web Page</b></h1>
+        <img src="/static/w3.png" alt="W3school" title="W3school" style="width:50%;height:auto;">
+        <p>In web’s track, I am learning HTML,CSS and Javascript through w3schools.com</p>
+        <p>
+            <a href="https://cs50.harvard.edu/x/2020/tracks/web/homepage/" target="_blank" >https://cs50.harvard.edu/x/2020/tracks/web/homepage/</a>
+        </p>
+        <p>This personal website is the assignment of this topic:</p>
+        <p>Version 1.0</p>
+        <img src="/static/personalweb.png" alt="Personal Website" title="Personal Website" style="width:30%;height:auto;">
+        <p>Version 2.0</p>
+        <img src="/static/personalweb2.png" alt="Personal Website" title="Personal Website" style="width:30%;height:auto;">
+    </div>
+
+{% endblock %}

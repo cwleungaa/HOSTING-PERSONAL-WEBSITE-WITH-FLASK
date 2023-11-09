@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{%block title %} C {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>C</b></h1>
+        <p class = "text1">This course starts with programming language C. It starts from Hello world program , then describes the data types and operators of C.
+        It then moves on to array ,struct and strings.
+        After that, I come to Searching like linear search, binary search, and sorting method like bubble sort, selection sort ,Merge sort and study their efficiency using big O notation.
+        After studying the basics, it moves to Pointers and Linked Lists.</p>
+        <h2>Course Assignment</h2>
+        <h2>Resize</h2>
+        <img class = "image2" src="/static/resize.png" alt="resize" title="Resize">
+        <p class = "text1">Implement a program called “Resize” that resizes (i.e., enlarges) 24-bit uncompressed BMPs by a factor of n .<br>
+        <a href="https://docs.cs50.net/2019/x/psets/3/resize/less/resize.html" target="_blank" >https://docs.cs50.net/2019/x/psets/3/resize/less/resize.html</a><br>
+        </p>
+        <h2>Recover</h2>
+        <img class = "image2" src="/static/recover.png" alt="recover" title="Recover"><br>
+        <p class = "text1">Implement a program called recover that recovers JPEGs from a forensic image.<br>
+        <a href="https://docs.cs50.net/2019/x/psets/3/recover/recover.html" target="_blank" >https://docs.cs50.net/2019/x/psets/3/recover/recover.html</a><br>
+        </p>
+        <br>
+        <h2>Speller</h2>
+        <p>
+        Implement a program that spell-checks a file ,using a hash table.<br>
+        <a href="https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html" target="_blank" >https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html</a>
+        </p>
+    </div>
+
+{% endblock %}

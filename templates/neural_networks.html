@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{%block title %} Neural Networks {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50ai.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Neural Networks</b></h1>
+        <p>
+            <img class = "network" src="/static/network.png" alt="Neural Networks" title="Neural Networks">
+            An Artificial Neural Network is a mathematical model for learning inspired by biological neural networks.<br>
+            Artificial neural networks model mathematical functions that map inputs to outputs based on the structure and parameters of the network.<br>
+            In artificial neural networks, the structure of the network is shaped through training on data.         
+        </p>
+
+        <p>
+            TensorFlow<br>
+            TensorFlow is a python library which has an implementation for neural networks using the backpropagation algorithm
+
+        </p>
+
+        <p>
+            Using the scipy library in Python, with all the variables inserted into the program properly, it can find the optimal solution if the solution exists.
+        </p>
+
+        <p>
+            Computer Vision<br>
+            Computer vision encompasses the different computational methods for analyzing and understanding digital images, and it is often achieved using neural networks.            
+        </p>
+
+        <p>
+            Convolutional Neural Networks<br>
+            A convolutional neural network is a neural network that uses convolution, usually for analyzing images.
+        </p>
+
+        <p>
+        Project:
+        </p>
+        <p>
+        Traffic
+        </pr>
+        <p>
+            Write an AI to identify which traffic sign appears in a photograph.<br>
+            <a href="https://cs50.harvard.edu/ai/2020/projects/5/traffic/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/5/traffic/</a><br>
+            <br>
+            Video:<br>
+            <iframe class="video" src="https://www.youtube.com/embed/rU6VBqHGPD0" style="height:400px;width:600px;"></iframe>
+        </p>
+    </div>
+{% endblock %}

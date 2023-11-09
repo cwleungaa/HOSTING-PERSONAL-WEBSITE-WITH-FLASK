@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{%block title %} Language {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50ai.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Language</b></h1>
+        <p>
+            This section introduces how an AI can be constructed to process human language.         
+        </p>
+
+        <p>
+            Context-Free Grammar<br>
+            In Context-Free Grammar, the text is abstracted from its meaning to represent the structure of the sentence using formal grammar.<br>
+            In python, we can use library nltk to implement this idea(Project: Parser).           
+        </p>
+
+        <p>
+            Information Retrieval<br>
+            Information retrieval is the task of finding relevant documents in response to a user query. <br>
+            We use tf-idf, by considering term frequency and Inverse Document Frequency, to assign a value to each word.<br> 
+            This method can output a list of words per document that are likely to span the main topics that define the document(Project: Questions).            
+        </p>
+
+        <p>
+            Project:
+        </p>
+            <p>
+            1.	Parser<br>
+            <img class = "game" src="/static/parser.png" alt="Parser" title="Parser">
+            Write an AI to parse sentences and extract noun phrases.<br>
+            <a href="https://cs50.harvard.edu/ai/2020/projects/6/parser/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/6/parser/</a><br>
+            <br>
+            In this project, we use library nltk to determine the structure of a sentence.<br>
+            We provide the algorithm with rules for the grammar, the program can print the graphical representation of syntactic tree.<br>
+            </p>
+            <br>
+            <p>
+            2.	Questions<br>
+            Write an AI to answer questions.<br>
+            <a href="https://cs50.harvard.edu/ai/2020/projects/6/questions/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/6/questions/</a><br>
+            <br>
+            We write a question answering system to perform document retrieval. <br>
+            We’ll use tf-idf to rank documents based both on term frequency for words in the query and inverse document frequency for words in the query.
+            </p>
+    </div>
+{% endblock %}

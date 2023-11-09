@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{%block title %} Mathematics {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_math.html' %}
+    <div class = "content_style menu_width">
+        <h1><b>Mathematics</b></h1>
+        <img class="dmath" src="/static/math.jpg" alt="Department of Mathematics" title="Department of Mathematics" >
+        <!-- style="width:45%;height:auto;" -->
+        <p>BSc degree in Mathematics is a three-year program.</p>
+        <p>There are six options in the program: Pure Mathematics, Mathematics and Physics, Applied Mathematics, Mathematical Science, Statistics and general Mathematics.</p>
+        <p>Pure Mathematics options are interested mainly in the mathematical content of the subject.</p>
+        <p>It specializes in three areas of study</p>
+        
+        <p> 1.	Analysis </p>  
+        <p> 2.	Algebra and Number theory </p>  
+        <p> 3.	Geometry </p>  
+
+        <p>Department Website</p>
+        <a href="https://www.math.hkust.edu.hk/" target="_blank" >https://www.math.hkust.edu.hk/</a>
+    </div>
+
+{% endblock %}

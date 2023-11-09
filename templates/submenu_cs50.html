@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS50 Submenu</title>
+</head>
+<body>
+    <div class="submenu">
+        <button {{"class=active" if request.path == '/cs50/c' else '' }} onclick="redirect_page('{{url_for('cs50.c')}}');">C</button>
+        <button {{"class=active" if request.path == '/cs50/python' else '' }} onclick="redirect_page('{{url_for('cs50.python')}}');">Python</button>
+        <button {{"class=active" if request.path == '/cs50/sql' else '' }} onclick="redirect_page('{{url_for('cs50.sql')}}');">SQL</button>
+        <button {{"class=active" if request.path == '/cs50/games' else '' }} onclick="redirect_page('{{url_for('cs50.games')}}');">Game</button>
+        <div class="submenu_container">
+            <button {{"class=active" if request.path == '/cs50/games/pong' else '' }} onclick="redirect_page('{{url_for('cs50.pong')}}');">Pong</button>
+            <button {{"class=active" if request.path == '/cs50/games/mario' else '' }} onclick="redirect_page('{{url_for('cs50.mario')}}');">Mario</button>
+        </div>
+        <button {{"class=active" if request.path == '/cs50/webmain' else '' }} onclick="redirect_page('{{url_for('cs50.webmain')}}');">Web Programming</button>
+        <div class="submenu_container">
+            <button {{"class=active" if request.path == '/cs50/webmain/web' else '' }} onclick="redirect_page('{{url_for('cs50.web')}}');">Personal Website</button>
+            <button {{"class=active" if request.path == '/cs50/webmain/finance' else '' }} onclick="redirect_page('{{url_for('cs50.finance')}}');">Finance</button>
+        </div>
+        <button {{"class=active" if request.path == '/cs50/final_project' else '' }} onclick="redirect_page('{{url_for('cs50.final_project')}}');">Final Project</button>
+    </div>
+</body>
+</html>

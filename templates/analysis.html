@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{%block title %} Analysis {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_math.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Analysis</b></h1>
+        <p>Mathematical analysis is the branch of mathematics dealing with limits and related theories, such as differentiation, integration, measure, infinite series, and analytic functions.
+        <br>
+        <br>
+        These theories are usually studied in the context of real and complex numbers and functions. Analysis evolved from calculus, which involves the elementary concepts and techniques of analysis. Analysis may be distinguished from geometry;
+        however, it can be applied to any space of mathematical objects that has a definition of nearness (a topological space) or specific distances between objects (a metric space).
+        </p>
+    {%block footer %}
+        {{ super() }}
+        <p>Reference:</p>
+        <a href="https://en.wikipedia.org/wiki/Mathematical_analysis" target="_blank">https://en.wikipedia.org/wiki/Mathematical_analysis</a>
+    {% endblock %}
+    </div>
+{% endblock %}
+
+

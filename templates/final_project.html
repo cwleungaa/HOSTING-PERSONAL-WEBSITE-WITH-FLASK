@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{%block title %} Final Project {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Final Project (RSA Message Encryption and Decryption System)</b></h1>
+        <iframe class="video" src="https://www.youtube.com/embed/QF2r6zViA6A" style="height:400px;width:600px;"></iframe>
+        <p>In this final project, I am using python and SQL to build an RSA message encryption and decryption system. <br>
+            This program allows users to send secret messages between sender and receiver.</p>
+        <p>This program contains four files, two python files is the encryption and decryption program.<br>
+            One csv file contains the encrypted messages. <br>
+            And one SQL file contains users account information, including username, password, public key and secret key.<br>
+            The user interface is built by using the tkinter modulus of python.</p>
+
+        <p>The encryption method is called RSA algorithm, which I learnt in my Math Number theory class. <br>
+            The method mainly is assigning a pair of unique public key and secret key to each user. <br>
+            To encrypt the message, the algorithm will use sender’s secret key and receiver’s public key to do the encryption. <br>
+            After that, for decryption, we need to know the sender of message, in order to pick the correct sender’s public key, with his own receiver’s secret key to do the decryption. <br>
+            This algorithm prevent from sending message to incorrect person because they can’t decrypt the message using their own receiver secret key. <br>
+            Also, the receiver has to know the identity of the sender in order to pick the correct sender’s public key.</p>
+            <p>
+                <a href="https://cs50.harvard.edu/x/2020/project/" target="_blank" >https://cs50.harvard.edu/x/2020/project/</a>
+            </p>    
+    </div>
+
+{% endblock %}

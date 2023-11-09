@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{%block title %} Optimization {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50ai.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Optimization</b></h1>
+        <p>
+            Optimization is choosing the best option from a set of possible options.<br>
+            This section introduces various tools and algorithm on handling optimization problems.            
+        </p>
+
+        <p>
+            Linear Programming:<br>
+            Linear programming is a family of problems that optimize a linear equation (an equation of the form y = ax₁ + bx₂ + …).            
+        </p>
+
+        <p>
+            Using the scipy library in Python, with all the variables inserted into the program properly, it can find the optimal solution if the solution exists.
+        </p>
+
+        <p>
+            Constraint Satisfaction<br>
+            Constraint Satisfaction problems are a class of problems where variables need to be assigned values while satisfying some conditions.<br>
+            With the understanding of Node consistency and Arc consistency, it introduces the Backtracking search algorithm.
+        </p>
+
+        <p>
+        Project:
+        </p>
+        <p>
+        Crossword
+        </pr>
+        <p>
+        <img class = "game" src="/static/crossword.png" alt="Crossword" title="Crossword">
+        Write an AI to generate crossword puzzles.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/3/crossword/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/3/crossword/</a><br>
+        <br>
+        It is given the structure of a crossword puzzle and a list of word,<br>
+        the problem becomes one of choosing which words should go in each vertical or horizontal sequence of squares. <br>
+        We can model this sort of problem as a constraint satisfaction problem.<br>
+        </p>
+    </div>
+{% endblock %}

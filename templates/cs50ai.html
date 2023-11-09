@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{%block title %} CS50AI {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50ai.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>CS50’s Introduction to Artificial Intelligence with Python</b></h1>
+        <p>This course introduces the concepts and algorithms of modern artificial intelligence.<br>
+            This course mainly focuses on the following topics:
+        </p>
+        <p>Search<br>
+            It’s about finding a solution of problems like finding the best path between two places or finding the best move of a game.
+        </p>
+        <p>Knowledge<br>
+            It’s about how AI base on existing knowledge to draw conclusion using Propositional Logic.
+        </p>
+        <p>Uncertainty<br>
+            It’s about how AI makes optimal decisions using Probability.
+        </p>
+        <p>Optimization<br>
+            It’s about choosing the best option from a set of possible option.
+        </p>
+        <p>Learning<br>
+            It’s about Machine Learning - how computer learns to recognize patterns and able to execute tasks on its own.
+        </p>
+        <p>Neural Networks<br>
+            A program structure inspired by the human brain that is able to perform tasks effectively.
+        </p>
+        <p>Language<br>
+            It’s about how AI process human language.
+        </p>
+
+        <p>
+            Each topic is followed by one or two projects in order to practice the theory of each topic.
+        </p>
+
+
+
+        <p>Course Website</p>
+        <a href="https://cs50.harvard.edu/ai/2020/" target="_blank" >https://cs50.harvard.edu/ai/2020/</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+
+    <h1 style="color:Brown">Here's my path:</h1>
+    <div class = "main">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="/static/1.jpg" style="width:100%">
+              <div class="text">Graduated in HKUST with Mathematics Major</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="/static/2.jpg" style="width:100%">
+              <div class="text">Worked as a Mathematics tutor</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="/static/3.jpg" style="width:100%">
+              <div class="text">Worked in IRD</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="/static/4.jpg" style="width:100%">
+              <div class="text">Being a Programmer now</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <img src="/static/5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="/static/6.jpg" style="width:100%">
+              <div class="text">Become a data scientist</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="{{url_for('static', filename='myScript.js')}}"></script>
+
+</html>

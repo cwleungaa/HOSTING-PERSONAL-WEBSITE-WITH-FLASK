@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{%block title %} Web {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Web Programming</b></h1>
+        <p>In this track, we’ll write programs that can run on the internet.
+        We’ll first learn about the basics of the internet and how it works, and then dive into the languages of the internet,
+        from HTML and CSS to JavaScript to frameworks in Python and SQL that can turn a webpage into an application.
+        </p>
+        <h2><b>Web Page</b></h2>
+        <p>We create a personal website using HTML , CSS and javascript</p>
+        <h2><b>Finance</b></h2>
+        <p>We use flask from python,SQL and HTML to create a virtual transaction platform in order to buy and sell stocks.</p>
+    </div>
+
+{% endblock %}

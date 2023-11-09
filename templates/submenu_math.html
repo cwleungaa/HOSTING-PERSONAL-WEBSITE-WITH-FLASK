@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MATH Submenu</title>
+</head>
+<body>
+    <div id="math" class="submenu">
+        <button {{"class=active" if request.path == '/mathematics/calculus' else '' }} onclick="redirect_page('{{url_for('mathematics.calculus')}}');">Calculus</button>
+        <button {{"class=active" if request.path == '/mathematics/analysis' else '' }} onclick="redirect_page('{{url_for('mathematics.analysis')}}');">Analysis</button>
+        <div class="submenu_container">
+            <button {{"class=active" if request.path == '/mathematics/analysis/real_analysis' else '' }} onclick="redirect_page('{{url_for('mathematics.real_analysis')}}');">Real Analysis</button>
+            <button {{"class=active" if request.path == '/mathematics/analysis/complex_analysis' else '' }} onclick="redirect_page('{{url_for('mathematics.complex_analysis')}}');">Complex Analysis</button>
+        </div>
+        <button {{"class=active" if request.path == '/mathematics/algebra' else '' }} onclick="redirect_page('{{url_for('mathematics.algebra')}}');">Algebra</button>
+        <button {{"class=active" if request.path == '/mathematics/number_theory' else '' }} onclick="redirect_page('{{url_for('mathematics.number_theory')}}');">Number Theory</button>
+        <button {{"class=active" if request.path == '/mathematics/geometry' else '' }} onclick="redirect_page('{{url_for('mathematics.geometry')}}');">Geometry</button>
+    </div>
+</body>
+</html>

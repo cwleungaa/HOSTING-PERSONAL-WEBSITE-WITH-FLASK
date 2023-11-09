@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{%block title %} Geometry {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_math.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Geometry</b></h1>
+        <img class = "image_right" src="/static/geometry.jpg" alt="Geometry" title="Geometry">
+        <p>Geometry concerned with properties of space that are related with distance, shape, size, and relative position of figures.<br>
+            <br>
+            Until the 19th century, geometry was almost exclusively devoted to Euclidean geometry,<br>
+            which includes the notions of point, line, plane, distance, angle, surface, and curve, as fundamental concepts.<br>
+            <br>
+            Later in the 19th century, it appeared that geometries without the parallel postulate (non-Euclidean geometries) can be developed without introducing any contradiction. <br>
+            The geometry that underlies general relativity is a famous application of non-Euclidean geometry.
+        </p>
+
+    {%block footer %}
+        {{ super() }}
+        <p>Reference:</p>
+        <a href="https://en.wikipedia.org/wiki/Geometry" target="_blank">https://en.wikipedia.org/wiki/Geometry</a>
+    {% endblock %}
+    </div>
+{% endblock %}
+

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{%block title %} Multivariable Calculus {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_math.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Multivariable Calculus</b></h1>
+        <p>Multivariable calculus (also known as multivariate calculus) is the extension of calculus in one variable to calculus with functions of several variables: the differentiation and integration of functions involving several variables, rather than just one.</p>
+        <h2>Partial differentiation</h2>
+        <img class = "image2" src="/static/diff1.png" alt="Partial differentiation" title="Partial differentiation">
+        <img class = "image2" src="/static/diff2.png" alt="Partial differentiation" title="Partial differentiation">
+        <br>
+        <p>The partial derivative generalizes the notion of the derivative to higher dimensions. A partial derivative of a multivariable function is a derivative with respect to one variable with all other variables held constant.</p>
+        <h2>Multiple integration</h2>
+        <img class = "image2" src="/static/integral1.png" alt="Multiple integration" title="Multiple integration">
+        <img class = "image2" src="/static/integral2.png" alt="Multiple integration" title="Multiple integration">
+        <br>
+        <p>The multiple integral expands the concept of the integral to functions of any number of variables. Double and triple integrals may be used to calculate areas and volumes of regions in the plane and in space. The surface integral and the line integral are used to integrate over curved manifolds such as surfaces and curves.</p>
+        {%block footer %}
+        {{ super() }}
+            <p>Reference:</p>
+            <a href="https://en.wikipedia.org/wiki/Multivariable_calculus" target="_blank">https://en.wikipedia.org/wiki/Multivariable_calculus</a>
+        {% endblock %}
+    </div>
+{% endblock %}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Raymond's Website</title>
+</head>
+
+<body onload = date()>
+    <div class="header">
+    <img src = "/static/home.jpg"  alt="Home" class="menulinks home_button rounded-circle" onclick="redirect_page('{{url_for('index')}}');" width="80" height="80">
+        <h1>Raymond Leung</h1>
+        <p id = "date"></p>
+    </div>
+
+<!--Menu bar part-->
+    <div class="col_main_menu- menu">
+
+        <button id = "home" onclick="redirect_page('{{url_for('index')}}');">Home</button>
+
+        <button {{"class=active" if request.path == '/about_me' else '' }} onclick="redirect_page('{{url_for('about_me')}}');">About Me</button>
+
+        <button {{"class=active" if request.path.startswith('/cs50ai/') else '' }} onclick="redirect_page('{{url_for('cs50ai.index')}}');">CS 50 AI</button>
+
+        <button {{"class=active" if request.path.startswith('/cs50/') else '' }} onclick="redirect_page('{{url_for('cs50.index')}}');">CS 50</button>
+
+        <button {{"class=active" if request.path.startswith('/mathematics/') else '' }} onclick="redirect_page('{{url_for('mathematics.index')}}');">MATHEMATICS</button>
+
+        <button {{"class=active" if request.path == '/financial_analysis' else '' }} onclick="redirect_page('{{url_for('financial_analysis')}}');">Python and Statistics</button>
+
+        <button {{"class=active" if request.path == '/contact_me' else '' }} onclick="redirect_page('{{url_for('contact_me')}}');">Contact Me</button>
+
+    </div>
+</body>
+</html>

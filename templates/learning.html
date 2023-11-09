@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{%block title %} Learning {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50ai.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Machine Learning</b></h1>
+        <p>
+            Machine learning provides a computer with data, rather than explicit instructions. <br>
+            Using these data, the computer learns to recognize patterns and becomes able to execute tasks on its own.      
+        </p>
+
+        <p>
+            Supervised Learning<br>
+            Classification - a task where the function maps an input to a “discrete” output.                     
+        </p>
+
+        <p>
+            Regression<br>
+            Regression is a supervised learning task of a function that maps an input point to a “continuous” value.
+        </p>
+
+        <p>
+            Reinforcement Learning<br>
+            Reinforcement learning is another approach to machine learning, where after each action, <br>
+            the agent gets feedback in the form of reward or punishment (a positive or a negative numerical value).            
+        </p>
+
+        <p>
+            Unsupervised Learning<br>
+            The input data is present and the AI learns patterns in these data.
+        </p>
+
+
+        <p>
+        Project:
+        </p>
+        <p>
+        1.	Degrees<br>
+        Write an AI to predict whether online shopping customers will complete a purchase.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/4/shopping/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/4/shopping/</a><br>
+        <br>
+        With Given information about a user — how many pages they’ve visited, whether they’re shopping on a weekend, what web browser they’re using, etc. <br>
+        Your classifier will predict whether or not the user will make a purchase.
+        </p>
+
+        <br>
+
+        <p>
+        2.	Nim<br>
+        Write an AI that teaches itself to play Nim through reinforcement learning.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/4/nim/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/4/nim/</a><br>
+        <br>
+        In the game Nim, we begin with some number of piles, each with some number of objects.<br>
+        Players take turns: on a player’s turn, the player removes any non-negative number of objects from any one non-empty pile. 
+        Whoever removes the last object loses.
+        </p>               
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{%block title %} Complex Analysis {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_math.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Complex analysis</b></h1>
+        <img class = "image_right" src="/static/complex.jpg" alt="Complex Number" title="Complex Number">
+        <p>Complex analysis, traditionally known as the theory of functions of a complex variable, is the branch of mathematical analysis that investigates functions of complex numbers.
+        <br>
+        <br>
+        It is useful in many branches of mathematics, including algebraic geometry, number theory, analytic combinatorics, applied mathematics; as well as in physics, including the branches of hydrodynamics, thermodynamics, and particularly quantum mechanics.
+        <br>
+        <br>
+        By extension, use of complex analysis also has applications in engineering fields such as nuclear, aerospace, mechanical and electrical engineering.
+        </p>
+
+
+    {%block footer %}
+    {{ super() }}
+        <p>Reference:</p>
+        <a href="https://en.wikipedia.org/wiki/Complex_analysis" target="_blank">https://en.wikipedia.org/wiki/Complex_analysis</a>
+    {% endblock %}
+    </div>
+{% endblock %}
+

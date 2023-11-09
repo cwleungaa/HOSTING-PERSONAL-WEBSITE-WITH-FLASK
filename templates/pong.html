@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{%block title %} Pong {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50.html' %}
+
+    <div class = "content_style menu_width">
+
+        <h1><b>Pong</b></h1>
+        <img src="/static/pong1.png" alt="SQL" title="SQL" style="width:60%;height:auto;">
+        <img src="/static/pong2.png" alt="SQL" title="SQL" style="width:60%;height:auto;">
+        <p class = "text1">In pong, my job is Implement an AI-controlled paddle such that the AI are either deflect the ball at all times or may lose to player sometimes.
+        <a href="https://cs50.harvard.edu/x/2020/tracks/games/pong/" target="_blank" >https://cs50.harvard.edu/x/2020/tracks/games/pong/</a>
+        </p>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{%block title %} Python and Statistics for Financial Analysis {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+<div class="content_style full_width">
+
+        <h1><b>Python and Statistics for Financial Analysis</b></h1>
+        <img class = "image_right" src="/static/financial.png" alt="Financial Analysis" title="Financial Analysis">
+        <p>
+            This course combines both Python and Statistics concepts and applying them into analyzing financial data, such as stock data.
+            After understanding foundational concepts of statistics, we are going to realize the statistics concepts by means of Python packages and syntaxes to perform financial data analysis.
+        </p>
+        <p>
+            We are going to learn how to import, pre-process and save financial data and how to manipulate the existing data by generating new variables using multiple columns in Python,
+            with the following python libraries:
+        </p>
+
+        <p>
+            Pandas is a python package, providing fast, flexible, and expressive data structures.
+            It aims to be the fundamental high-level building blocks, for doing practical real-world data analysis.
+            For example, DataFrame and the series from Pandas, are excellent data structures to store table and time series data.
+        </p>
+        <p>
+            NumPy is a fundamental package for numerical computing of array and matrix.
+            It is also very convenient tool for generating random numbers, which could be helpful if we want to shuffle data, or generate a dataset with normal distribution.
+        </p>
+        <p>
+            Matplotlib is a plotting package, which produces high-quality figures with all kinds of customization.
+        </p>
+        <p>
+            Statsmodels is a powerful library for statistician. It contains modules for regression and time series analysis.
+            In this course, we will use Statsmodels to obtain multiple linear regression models.
+        </p>
+</div>
+{% endblock %}

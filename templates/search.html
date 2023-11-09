@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{%block title %}Search{% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50ai.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Search</b></h1>
+        <p>
+            This session introduces different kind of search method.<br>
+            It includes:
+        </p>
+
+        <p>
+            Uninformed search algorithms that do not utilize any knowledge about the problem 
+            that they did not acquire through their own exploration.<br>
+            EG: Depth-First Search, Breadth-First Search.
+        </p>
+
+        <p>
+            Informed search algorithm considers additional knowledge to try to improve its performance.<br>
+            EG: Greedy Best-First Search, A* Search
+        </p>
+
+        <p>
+            Adversarial Search which the algorithm faces an opponent that tries to achieve the opposite goal.<br>
+            EG:Minimax algorithm, Alpha-Beta Pruning
+        </p>
+
+        <p>
+        Project:
+        </p>
+        <p>
+        1.	Degrees<br>
+        Write a program that determines how many “degrees of separation” apart two actors are.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/0/degrees/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/0/degrees/</a>
+        </p>
+        <br>
+        <p>
+        2.	Tic-Tac-Toe<br>
+        Using Minimax, implement an AI to play Tic-Tac-Toe optimally.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/0/tictactoe/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/0/tictactoe/</a><br>
+        <img class = "game" src="/static/tac.png" alt="Tic-Tac-Toe" title="Tic-Tac-Toe"><br>
+        Video:<br>
+        <iframe class="video" src="https://www.youtube.com/embed/ekoIC5sc054" style="height:400px;width:600px;"></iframe>
+        </p>
+    </div>
+{% endblock %}

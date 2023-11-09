@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{%block title %} Uncertainty {% endblock %}
+
+{%block body %}
+
+{% include 'menu.html' %}
+
+{% include 'submenu_cs50ai.html' %}
+
+    <div class = "content_style menu_width">
+        <h1><b>Uncertainty</b></h1>
+        <p>
+            This section is about how we can create AI that makes optimal decisions given limited information and uncertainty. <br>
+            We use probability theory to handle the uncertainty.<br>
+            It introduces:
+        </p>
+
+        <p>
+            The basic Probability rules with Unconditional Probability and Conditional Probability.
+        </p>
+
+        <p>
+            Bayesian Networks -- a data structure that represents the dependencies among random variables.
+        </p>
+
+        <p>
+            Markov Models -- with the assumption that the current state depends on only a finite fixed number of previous states, <br>
+            to get a more rough approximation of the probabilities of interest.
+        </p>
+
+        <p>
+        Project:
+        </p>
+        <p>
+        1.	PageRank<br>
+        Write an AI to rank web pages by importance.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/2/pagerank/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/2/pagerank/</a><br>
+        <br>
+        A more important website means more other websites link to the current one. <br>
+        We calculate the importance with two approaches: <br>
+        By sampling pages from a Markov Chain random surfer and by iteratively applying the PageRank formula.
+        </p>
+        <br>
+        <p>
+        2.	Heredity<br>
+        Write an AI to assess the likelihood that a person will have a particular genetic trait.<br>
+        <a href="https://cs50.harvard.edu/ai/2020/projects/2/heredity/" target="_blank" >https://cs50.harvard.edu/ai/2020/projects/2/heredity/</a><br>
+        <br>
+        We use Bayesian Networks to build the relationship between parents and child.<br>
+        Then, we use this model to make inferences about a population.
+        </p>
+    </div>
+{% endblock %}
